@@ -68,9 +68,7 @@ final class FilmListVM {
 //            return Empty(completeImmediately: false).eraseToAnyPublisher()
 //        }
         isFetchInProgress = true
-        // Не встиг
 //        let link = "https://api.themoviedb.org/3/movie/now_playing?api_key=ebea8cfca72fdff8d2624ad7bbf78e4c&language=uk-UK&page=\(pageNumber)"
-        // То что успел
         let link = "https://api.themoviedb.org/3/search/movie?api_key=ebea8cfca72fdff8d2624ad7bbf78e4c&language=en-US&query=\(searchText)&page=\(pageNumber)&include_adult=false"
         let request = AF.request(link)
         
